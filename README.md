@@ -6,7 +6,14 @@ The purpose of this project is to create a similar system using the AWS cloud.
 
 
 ## Contents
-There are three Python scripts that collect the pinterest data in different ways.
+
+### 0afffbed4f09-key-pair.pem
+This is required to run the rest proxy see installation step 3
+
+### db_creds.yaml
+necessary credential file included in the .gitignore to run the scripts
+
+#### There are three Python scripts that collect the pinterest data in different ways.
 
 ### 1. user_posting_emulation.py
 This is a batch processing unit it requires a configures AWS EC2 instance and uses Apache Kafka Client machine
@@ -19,8 +26,6 @@ This data is then set up to be streamed into Databrick for processing where it i
 ### 3. 0afffbed4f09_day.py
 This is a Python script that is a DAG used for a scheduled airflow task. This DAG runs a Databricks notebook once a day at midnight
 
-### 0afffbed4f09-key-pair.pem
-This is required to run the rest proxy see installation step 3
 
 
 ## System Requirements
