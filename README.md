@@ -46,8 +46,8 @@ This is a Python script that is a DAG used for a scheduled airflow task. This DA
     6. Then run the command
     ./kafka-rest-start /home/ec2-user/confluent-7.2.0/etc/kafka-rest/kafka-rest.properties
     7. This will activate the Proxy and it will await a response from the user_posting_emulation.py
-    
-4. The user_posting_emulation.py script can then be run
+
+4. Keeping the proxy open the user_posting_emulation.py script can then be run. You will see the proxy injesting data
 5. Closing the proxy the user_posting_emulation_streaming.py can be run
 
 ## Information about the collected data
