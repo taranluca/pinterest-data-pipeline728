@@ -28,7 +28,7 @@ This is required to run the rest proxy see installation step 3
 2. You need to be able to run Bash commands as well if you are on windows make sure you have git Bash or similar
 
 ## Installation
-1. Download the entier repository on your local machine
+1. Download the entire repository on your local machine
 2. Opening the python scripts there are a list of modules that need to be installed into a virtual environment
 #### 3. Running the Rest Proxy
   1. Working in Git Bash navigate to the directory where you have downloaded this repo
