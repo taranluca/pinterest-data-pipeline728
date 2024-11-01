@@ -35,17 +35,18 @@ This is a Python script that is a DAG used for a scheduled airflow task. This DA
 ## Installation
 1. Download the entire repository on your local machine
 2. Opening the python scripts there are a list of modules that need to be installed into a virtual environment
-#### 3. Running the Rest Proxy
-  1. Working in Git Bash navigate to the directory where you have downloaded this repo
-  2. Identify that the "0afffbed4f09-key-pair.pem" file is present
-  3. Run this code in Git Bash terminal
-  ssh -i "0afffbed4f09-key-pair.pem" ec2-user@ec2-54-81-162-124.compute-1.amazonaws.com
-  4. Once run sucesfully you should have this new base [ec2-user@ip-172-31-32-252 ~]
-  5. run the following command
-cd confluent-7.2.0/bin
-  6. Then run the command
-  ./kafka-rest-start /home/ec2-user/confluent-7.2.0/etc/kafka-rest/kafka-rest.properties
-  7. This will activate the Proxy and it will await a response from the user_posting_emulation.py
+    #### 3. Running the Rest Proxy
+    1. Working in Git Bash navigate to the directory where you have downloaded this repo
+    2. Identify that the "0afffbed4f09-key-pair.pem" file is present
+    3. Run this code in Git Bash terminal
+    ssh -i "0afffbed4f09-key-pair.pem" ec2-user@ec2-54-81-162-124.compute-1.amazonaws.com
+    4. Once run sucesfully you should have this new base [ec2-user@ip-172-31-32-252 ~]
+    5. run the following command
+    cd confluent-7.2.0/bin
+    6. Then run the command
+    ./kafka-rest-start /home/ec2-user/confluent-7.2.0/etc/kafka-rest/kafka-rest.properties
+    7. This will activate the Proxy and it will await a response from the user_posting_emulation.py
+    
 4. The user_posting_emulation.py script can then be run
 5. Closing the proxy the user_posting_emulation_streaming.py can be run
 
