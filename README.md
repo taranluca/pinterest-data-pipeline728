@@ -7,9 +7,6 @@ The purpose of this project is to create a similar system using the AWS cloud.
 
 ## Contents
 
-### 0afffbed4f09-key-pair.pem
-This is required to run the rest proxy see installation step 3
-
 ### db_creds.yaml
 necessary credential file included in the .gitignore to run the scripts
 
@@ -37,15 +34,14 @@ This is a Python script that is a DAG used for a scheduled airflow task. This DA
 2. Opening the python scripts there are a list of modules that need to be installed into a virtual environment
     #### 3. Running the Rest Proxy
     1. Working in Git Bash navigate to the directory where you have downloaded this repo
-    2. Identify that the "0afffbed4f09-key-pair.pem" file is present
-    3. Run this code in Git Bash terminal
+    2. Run this code in Git Bash terminal
     ssh -i "0afffbed4f09-key-pair.pem" ec2-user@ec2-54-81-162-124.compute-1.amazonaws.com
-    4. Once run sucesfully you should have this new base [ec2-user@ip-172-31-32-252 ~]
-    5. run the following command
+    3. Once run sucesfully you should have this new base [ec2-user@ip-172-31-32-252 ~]
+    4. run the following command
     cd confluent-7.2.0/bin
-    6. Then run the command
+    5. Then run the command
     ./kafka-rest-start /home/ec2-user/confluent-7.2.0/etc/kafka-rest/kafka-rest.properties
-    7. This will activate the Proxy and it will await a response from the user_posting_emulation.py
+    6. This will activate the Proxy and it will await a response from the user_posting_emulation.py
 
 4. Keeping the proxy open the user_posting_emulation.py script can then be run. You will see the proxy injesting data
 5. Closing the proxy the user_posting_emulation_streaming.py can be run
